@@ -200,7 +200,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
               {
                 "rows": [{
                   "title": `Pemilik Bot`,
-                  "description": "👤owner ganteng disini👤",
+                  "description": "👤owner disini👤",
                   "rowId": `.owner`
                 },{
                   "title": "INFO BOT",
@@ -358,11 +358,11 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-        let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
+//        let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu.mp4'), gifPlayback: true }, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
-           videoMessage: message.videoMessage,
+//           videoMessage: message.videoMessage,
            hydratedContentText: text.trim(),
            hydratedFooterText: `🅛=limit 🅟=premium`,
            hydratedButtons: [{
